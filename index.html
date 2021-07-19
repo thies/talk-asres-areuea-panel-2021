@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Thies Lindenthal: Training ML-classifiers on stated preferences for house aesthetics</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="tweaks.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-image="imgs/wohlde1.jpg" class="centred">
+						<h2><span class="transparent70 ">From black box to black box: </span></h2>
+
+						<h2><span class="subtitle transparent70 ">Training ML-classifiers on stated preferences for house aesthetics</span></h2>
+						<h2><span class="subtitle transparent70 ">Dr. Thies Lindenthal</span></h2>
+						<p><span class="subtitle transparent70 "> Department of Land Economy / University of Cambridge</span></p>
+
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+
+						<span class="subtitle transparent70">E-mail: htl24@cam.ac.uk / Twitter: @ThiesLindenthal</span></p>
+			</section>
+
+
+			<section data-background-image="imgs/wohlde2.jpg">
+			</section>
+
+
+
+			<section data-background-image="imgs/norwich5.jpg" data-background-size="contain">
+			</section>
+
+			<section data-background-image="imgs/norwich6.jpg">
+			</section>
+
+			<section data-background-image="imgs/norwich1.jpg" data-background-size="contain">
+			</section>
+			<section data-background-image="imgs/norwich2.jpg">
+			</section>
+			<section data-background-image="imgs/norwich3.jpg" data-background-size="contain">
+			</section>
+			<section data-background-image="imgs/norwich4.jpg" data-background-size="contain">
+			</section>
+			<section data-background-image="imgs/cambridge3.jpg">
+			</section>
+			<section data-background-image="imgs/cambridge2.jpg" data-background-size="contain">
+			</section>
+			<section data-background-image="imgs/cambridge1.jpg" data-background-size="contain">
+			</section>
+
+
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Research Agenda<span class="subtitle"><br/>Joint projects with Erik Johnson, Carolin Schmidt & Wayne Wan: Teach computers to look at buildings in a "human" way.</span>
+						<iframe data-src="https://www.google.com/maps/embed?pb=!4v1615400218848!6m8!1m7!1sfrGO3071bDjlMFWKCuPROg!2m2!1d52.20218228800385!2d0.116240823654906!3f214.30357533449632!4f12.499881249341925!5f0.7820865974627469" data-preload width="900" height="400"></iframe>
+						Note:
+					</textarea>
+				</section>
+
+				<section data-markdown data-background-image="imgs/romsey_road.jpg">
+					<textarea data-template>
+						<span class="transparent80">1. How can we use new sensors to learn more about buildings and investments?<br>(<a href="https://link.springer.com/article/10.1007/s11146-021-09845-1">Lindenthal & Johnson, JREFE 2021</a>)</span>
+					</textarea>
+				</section>
+
+
+				<section data-markdown data-background-image="imgs/research_system_testing_lime.png" data-background-size="contain">
+					<textarea data-template>
+						<p class="darkonlight">2. How can we understand what is happening inside ML models and interpret the findings beyond raw predictive power? (<a href="https://www.lindenthal.eu/assets/papers/Wan%20and%20Lindenthal%20-%20System%20Testing.pdf">Wan & Lindenthal, working paper</a>)</p>
+						Note:
+					</textarea>
+				</section>
+
+				<section data-markdown data-background-image="imgs/empress.jpg">
+					<textarea data-template>
+						<span class="transparent80">3. How can ML techniques help us to understand subjective perceptions of buildings, such as aesthetic appeal, uniqueness, or charme?<br><br>(<a href="">Lindenthal, Schmidt & Wan, working paper</a>)</span>
+
+						Note:
+					</textarea>
+				</section>
+
+
+				<section data-markdown data-background-video="imgs/PXL_20210310_232954432.mp4" data-background-video-loop data-background-video-muted>
+					<textarea data-template>
+						## <span class="transparent70">Taste is personal</span><span class=" transparent70 subtitle"><br/>What is it that people pay attention to when looking at houses?</span>
+
+						* <span class="transparent70">App: people can quickly like/dislike photos of houses</span>
+						* <span class="transparent70">Train an ML model based on personal tastes: Digital twin (sort of).</span>
+						* <span class="transparent70">Which features are attractive? Homogeneous tastes?</span>
+						* <span class="transparent70">Investigate whether revealed preferences match self-reported preferences.</span>
+						* <span class="transparent70">Participate: https://4walls.cremll.com</span>
+						* <span class="transparent70">[Working Paper](http://www.lindenthal.eu/assets/papers/Lindenthal,%20Schmidt%20and%20Wan%20-%20Aesthetic%20Preferences%20for%20Residential%20Architecture.pdf) </span>
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Incredible diversity<span class="subtitle"><br/>We had expected a bimodal distribution &mdash; but tastes differ a lot!</span>
+						<img src="imgs/hist_likes_training_data_many_responses.png" height="500">
+					</textarea>
+				</section>
+			</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Mostly positive<span class="subtitle"><br/>Greenery, high quality material, historic buildings.</span>
+						<img src="imgs/example_like.png" height="500">
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Mostly negative<span class="subtitle"><br/>Neglected, low quality, ad-hoc styles.</span>
+						<img src="imgs/example_dislike.png" height="500">
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Mixed responses<span class="subtitle"><br/>These are really interesting: Where do we differ?</span>
+						<img src="imgs/example_mixed.png" height="500">
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Does it work?<span class="subtitle"><br/>YES! Predicting individual responses possible!</span>
+						<img src="imgs/precision.png">
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Clusters of tastes?<span class="subtitle"><br/>One aesthetic fits all tastes? Well, most people dislike this look.</span>
+						<img src="imgs/2.png" height="500">
+					</textarea>
+				</section>
+
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Fairer Planning decisions?<span class="subtitle"><br/>This application was rejected, very negative comments on design. Our digital twins are more balanced.</span>
+						<img src="imgs/8.png" height="400">
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Searching ground truth<span class="subtitle"><br/>Participants are not consistent in their rankings.</span>
+						* Rankings become more critical in time.
+						<img src="imgs/share_likes_in_time.png">
+					</textarea>
+				</section>
+
+
+			<section data-markdown>
+				<textarea data-template>
+					## Findings<span class="subtitle"><br/>The real black box: is it between our ears?</span>
+					* Personalised classifiers are in reach: They can be trained with limited effort from participant (20 min?)
+					* Predictions are not perfect &mdash; but they are consistent.
+					* ML helps to understand how we look at the built environment.
+
+					<img src="imgs/icecream.jpg" height=300>
+
+				</textarea>
+			</section>
+
+
+				<section data-background-image="imgs/beach.jpg">
+						<h2><span class="transparent70">Let&apos;s talk?</span></h2>
+						<h3><span class="transparent70">I would love to hear from you!</span></h3>
+						<p><span class="transparent70">E-mail: htl24@cam.ac.uk <br/> Twitter: @ThiesLindenthal</span></p>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
